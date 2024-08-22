@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PH - assignment 3</title>
+
+    <!-- google font (manrope) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+    <!-- font awesome -->
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet"/>
+
+    <!-- tailwind with daisyUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- tailwind config file -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                parrot: '#ABEF5F',
+              }
+            }
+          }
+        }
+    </script>
+    
+    <style>
+        .manrope{
+            font-family: "Manrope", sans-serif;
+        }
+
+    </style>
+</head>
+<body class="manrope">
+
+    <!-- Header section -->
+    <header class=" bg-gradient-to-b from-[rgba(255, 255, 255, 1)] to-[rgba(255, 255, 255, 0)]">
+
+        <!-- nav area -->
+        <nav class="container mx-auto mt-3">
+            <div class="navbar justify-between">
+                <div class="navbar-start w-auto">
+                  <div class="flex items-center gap-1">
+                    <i class="fa-solid fa-arrow-right text-lg bg-lime-400 rounded-full h-8 w-8 inline-flex justify-center items-center -rotate-45"></i>
+                    <a href="index.html" class=" text-3xl font-extrabold">Rinterio</a>
+                  </div>
+                </div>
+
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1">
+                    <li><a href="#" class="font-medium text-base text-slate-400 hover:text-black hover:bg-inherit">Home</a></li>
+                    <li><a href="#" class="font-medium text-base text-slate-400 hover:text-black hover:bg-inherit">Service</a></li>
+                    <li><a href="#" class="font-medium text-base text-slate-400 hover:text-black hover:bg-inherit">Portfolio</a></li>
+                    <li><a href="#" class="font-medium text-base text-slate-400 hover:text-black hover:bg-inherit">Blog</a></li>
+                    <li><a href="#" class="font-medium text-base text-slate-400 hover:text-black hover:bg-inherit">Contact Us</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end space-x-2 w-auto">
+                 <div class="md:block hidden">
+                    <a href="#">
+                        <i class="fa-solid fa-magnifying-glass text-base bg-white rounded-full border-2 h-11 w-11 inline-flex justify-center items-center hover:bg-lime-300 duration-300"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-solid fa-cart-shopping text-base bg-white rounded-full border-2 h-11 w-11 inline-flex justify-center items-center hover:bg-lime-300 duration-300"></i>
+                    </a>
+                    <a class="btn bg-lime-400 text-black font-extrabold text-lg rounded-3xl hover:bg-lime-300">Book Consult 
+                        <i class="fa-solid fa-arrow-right text-xs bg-black text-lime-400 rounded-full h-5 w-5 inline-flex justify-center items-center -rotate-45"></i>
+                    </a>
+                 </div>
+
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden rounded-full border-2 border-slate-200 p-3 bg-white">
+                        <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        class="inline-block h-5 w-5 stroke-current">
+                        <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                    </div>
+                    <ul
+                    tabindex="0"
+                    class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow right-0">
+                    <li><a href="#" class="font-medium text-base text-slate-400 hover:text-black hover:bg-inherit">Home</a></li>
+                    <li><a href="#" class="font-medium text-base text-slate-400 hover:text-black hover:bg-inherit">Service</a></li>
+                    <li><a href="#" class="font-medium text-base text-slate-400 hover:text-black hover:bg-inherit">Portfolio</a></li>
+                    <li><a href="#" class="font-medium text-base text-slate-400 hover:text-black hover:bg-inherit">Blog</a></li>
+                    <li><a href="#" class="font-medium text-base text-slate-400 hover:text-black hover:bg-inherit">Contact Us</a></li>
+                    </ul>
+              </div>
+                </div>
+              </div>
+        </nav>
+        <!-- banner area -->
+         <section class="banner">
+            <div class="container mx-auto px-3">
+              <div class=" text-center">
+                  <img src="./assets/images/banner-img.png" class="mx-auto mb-2" alt="banner img">
+                  <h1 class=" text-3xl md:text-4xl lg:text-6xl font-extrabold text-black text-center leading-tight">
+                    A barn house of this design has a<br class="hidden md:block"> striking appearance
+                  </h1>
+                  <p class="font-medium text-base text-slate-600 text-center leading-7 mt-6">
+                    The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, <br class="hidden lg:block">sleek metal accents, and large windows that flood the space with natural light.
+                  </p>
+                  <a href="#" class="w-full md:w-fit btn mt-8 bg-lime-200 text-black font-bold text-lg rounded-3xl hover:bg-lime-400">View Details 
+                    <i class="fa-solid fa-arrow-right text-xs bg-lime-400 text-black rounded-full h-5 w-5 inline-flex justify-center items-center -rotate-45"></i>
+                  </a>
+              </div>
+            </div>
+         </section>
+         
+    </header>
+</body>
+</html>
